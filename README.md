@@ -91,3 +91,207 @@ div.onclick = function(){alert(2)} // выведеться только посл
 ##9. Что нужно, чтобы удалить ссылку на функциию
 Необходимо ссылка на именнованную функцию
 
+##10. Какие мотоды позволяют  переходить по истории 
+Back  and forward
+
+##11.  Текущий   url  страницы.
+window.location.href
+
+##12.  Спрэд и рэст операторы.
+Спрэд операторы
+[...'string']
+let arr = [1, 2, 3, 4]
+let arr2 =[...arr].
+Рэст операторы  (упаковывает все аргументы в массиве  )
+function(...rest) {
+return rest.reduce((total, current) => total + current)
+}
+
+##13.  Диструктуризация массива и объекта
+
+```javascript
+const objct ={
+fisname: 'Marko',
+lastName: 'Polo',
+position: 'Developer',
+year: 2016
+}
+let {fisname: fName, lastName: lName, position, year}  = objct;
+```
+
+##14.  Promise.all  для чего нужен
+ Для того, чтобы получить ответы от всех Promise
+ 
+ ##15.    Счастливое число.
+ 
+ ```javascript
+ let num=112242335566;
+ function(num){
+ num=[...String(num)];
+ let res ={};
+ 
+if(let i =0; i<num.length; i++) {
+if(res[num[i]){
+res[num[i]++
+} else {
+res[num[i]] = 1
+}
+ }
+ let result =0;
+ for(let key in res){
+ if(res[key] == key){
+ rusult =Match.max(result,key);
+ }
+ }
+ return result
+ }
+```
+  ##17. Расплитить строку
+  
+   ```javascript
+let res ={}
+str = str.split('&') // ['user.name.firstname=Bob']
+str = str.map(i.split('.');
+
+for(let i = 0; i < str.length; i++){
+let cur = res
+for(let key =0; key <str.[i].length; key++){
+ let name =str[i][key]
+ if(key = str[i].lenght -1) {
+ name = name.split('=')
+ cur[name[0]] = decodeUriComponent((name[1]))
+ break
+ }
+ if(cur[name){
+ cur = cur[name]
+ } esle{
+  cur[name] = {}
+  cur = cur[name]
+ }
+}
+}
+
+
+```
+
+  ##18. Результ выполнения 
+  
+     ```javascript
+var a = 5 // a =5 
+function f(){
+// a = undefined
+// не сработает  a = undefined
+if(a){
+
+console.log(a)
+var a = 10;
+}
+}
+
+```
+
+ ##19. Результ выполнения 
+  
+     ```javascript
+
+console.log(a) // a = = undefined
+var a = 5 
+console.log(b) // type error
+let b = 6; 
+```
+
+ ##20. Написать функцию inc 
+  
+     ```javascript
+let inc = (function (){
+let counter = 0;
+
+return fynction inc(){
+counter +1
+}
+})()
+```
+ ##19. Что выведет функция
+  
+     ```javascript
+     const obj = {
+     a: 42,
+     say: setTimeout( function (){
+     console.log(this.a);
+     },1000);
+          }
+     }
+     
+          const obj = {
+     a: 42,
+     say: setTimeout( () => { // es6
+     console.log(this.a);
+     },1000);
+          }
+     }
+     obj.say(); // 42
+     
+      
+       const obj = {
+     a: 42,
+     say: function (){
+     function helper(){
+     console.log(this.a);
+     }
+     setTimeout(helper.bind(this), 1000);
+     
+          }
+     }
+     obj.say(); // 42
+
+```
+
+ ##19. Что выведет функция
+  
+     ```javascript
+    const ex = function(value, sum){ console.log(sum+value)}
+    const fx  =ex(null, 10);
+   ex(12,7) // 19
+   fx(7,12) // 10+ 7 = 17
+```
+
+#20. Что выведет функция
+     ```javascript
+  let  words = ['a', 'b', 'c', 'd', 'a', 'd']
+  const mySort(words) =>{
+  const result = [];
+  const temp  words.reduce(acc, cur)=>{
+  acc[cur] = acc[cur] || 0) +1;
+  return acc;
+  }, {})
+  const keys = Object.keys(temp);
+  return keys.sort((a,b) =>{
+ return temp[b]- temp[a]
+  })
+  
+  
+
+}
+```
+#21. Увеличивать в 2 раза
+
+MyltiByTwo(1,2,3,4,5,6). 
+function MyltiByTwo(...restArgs){
+return restArgs.map(el => el*2)
+}
+
+#22. Увеличивать в 2 раза
+
+MyltiByTwo(1,2,3,4,5,6). 
+function MyltiByTwo(...restArgs){
+return restArgs.map(el => el*2)
+}
+
+#22. Увеличивать в 2 раза
+function calculate(cb){
+return fucntion (a){
+return function(b) {
+return cb(a,b)
+}
+}
+}
