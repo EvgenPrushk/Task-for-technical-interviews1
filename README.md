@@ -307,7 +307,51 @@ return cb(a,b)
  
   ```javascript
  const array = [1,2,3,4,5,6,6];
- const  max arr
- const 
+ const  max = array.reduce((acc, next)=> Math.max(acc,next));
+ const  max1 = array.sort((x1, x2) => x1-x2)  
+ const max2 = array.pop()
+const max3 = Math.max(...array); 
+```
+
+ ## 26 Сортировка элементов массива
+ ``javascript
+ const array = [1,2,3,4,5,6,6];
+
+ const  max1 = array.sort((x1, x2) => x1-x2)  
+ 
+
+```
+
+ ## 27 Сортировка элементов массива с объектов
+ ``javascript
+ const array = [{name: 'Test1', age: 17},{name:'Test2',age: 20}];
+
+ const  max1 = array.sort((x1, x2) => x1.age-x2.age)  
+ //    сортировка по полю  алфавиту
+ onst  max1 = array.sort((x1, x2) => {return u1.name.localeCompare(u2.name)})
+```
+ ## 28 Сортировка элементов массива с объектов
+ ``javascript
+ const array = [{name: 'Test1', age: 17},{name:'Test2',age: 20}];
+
+ const  max1 = array.sort((x1, x2) => x1.age-x2.age)  
+ //    сортировка по полю  алфавиту
+ onst  max1 = array.sort((x1, x2) => {return u1.name.localeCompare(u2.name)})
+```
+
+ ## 28 Перевернуть массив 
+ 
+ ``javascript
+ const array = [1,2,3,4,5,6,6];
+  const reversed = array.map((e, index, arr) => arr[arr.length - index - 1]
+  const revers1 = [...array].map(array.pop, array)
+
+
+
+ ## 28 Перевернуть массив 
+ 
+ ``javascript
+ const array = [1,'correct', 0, false, 9, Nan, ''];
+ const noFalse = array.filter(n =>!!n);
 
 ```
