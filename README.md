@@ -34,7 +34,7 @@ console.log(secondObj.name) // {name:"Hello"}
  
 ```
 
-##4. Как починить
+## 4.  Как починить 
 
 ```javascript
 for (var i = 0; i < 10; i++){
@@ -54,7 +54,7 @@ console.log(arguments.length)
 foo(1,2,3); // 3  аргумента
 ```
 
-##5. Что будет  выведено в консоль
+## 6. Что будет  выведено в консоль
 
 ```javascript
 function а (){
@@ -211,7 +211,7 @@ counter +1
 }
 })()
 ```
- ##19. Что выведет функция
+ ## 19. Что выведет функция
   
      ```javascript
      const obj = {
@@ -246,7 +246,7 @@ counter +1
 
 ```
 
- ##19. Что выведет функция
+ ## 19. Что выведет функция
   
      ```javascript
     const ex = function(value, sum){ console.log(sum+value)}
@@ -255,7 +255,7 @@ counter +1
    fx(7,12) // 10+ 7 = 17
 ```
 
-#20. Что выведет функция
+## 20. Что выведет функция
      ```javascript
   let  words = ['a', 'b', 'c', 'd', 'a', 'd']
   const mySort(words) =>{
@@ -273,21 +273,21 @@ counter +1
 
 }
 ```
-#21. Увеличивать в 2 раза
+## 21. Увеличивать в 2 раза
 
 MyltiByTwo(1,2,3,4,5,6). 
 function MyltiByTwo(...restArgs){
 return restArgs.map(el => el*2)
 }
 
-#22. Увеличивать в 2 раза
+## 22. Увеличивать в 2 раза
 
 MyltiByTwo(1,2,3,4,5,6). 
 function MyltiByTwo(...restArgs){
 return restArgs.map(el => el*2)
 }
 
-#22. Увеличивать в 2 раза
+## 23. Увеличивать в 2 раза
 function calculate(cb){
 return fucntion (a){
 return function(b) {
@@ -295,3 +295,19 @@ return cb(a,b)
 }
 }
 }
+
+ ## 24 Посчитать  сумму элементов массива
+ 
+  ```javascript
+ const array = [1,2,3,4,5,6,6];
+ sum = array.reduce((acc, next)=> acc+ next, 0)
+
+```
+ ## 25 Максимальный элемент
+ 
+  ```javascript
+ const array = [1,2,3,4,5,6,6];
+ const  max arr
+ const 
+
+```
