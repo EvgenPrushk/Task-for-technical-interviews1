@@ -352,3 +352,37 @@ const max3 = Math.max(...array);
  const array = [1,'correct', 0, false, 9, Nan, ''];
  const noFalse = array.filter(n =>!!n);
 ```
+
+ ## 31 Сумма элементов массива
+ 
+ ``javascript
+ function sum(){
+ return [].reduce.call(arguments, function(a, b){
+ return a+b
+ })
+ ```
+ 
+  ## 32  Перемножение элементов массива
+ 
+ ``javascript
+ function sum(){
+ return [].reduce.call(arguments, (sum, n)=> sum +=n )
+ ```
+   ## 33  Исполнить предыдущую функцию начиная со второго элемента передаваемого
+   
+ ``javascript
+ function sum(){
+ return [].reduce.call(arguments, function(a, b){
+ return a*b
+ })
+ ```
+ 
+  ```
+   ## 33  Исполнить предыдущую функцию начиная со второго элемента передаваемого
+   
+ ``javascript
+function(func){
+retun func.apply(this, [].slice.call(arguments, 1))
+}
+ ```
+
