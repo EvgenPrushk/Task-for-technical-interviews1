@@ -34,6 +34,9 @@ console.log(secondObj.name) // {name:"Hello"}
  
 ```
 
+
+https://github.com/EvgenPrushk/ReactInterviewQuestion/blob/main/README.md
+
 ## 4.  Как починить 
 
 ```javascript
@@ -385,4 +388,27 @@ function(func){
 retun func.apply(this, [].slice.call(arguments, 1))
 }
  ```
+// Task #1
+
+(async (url) => {
+    let response = await fetch(url)
+    if (response.status === 200) {
+        return await response.json()
+    }
+    throw new Error(response.status)
+})(`someurl`).catch(console.log)
+
+
+async function wait() {
+  await new Promise(resolve => setTimeout(resolve, 1000));
+
+  return 10;
+}
+
+function f() {
+  // покажет 10 через 1 секунду
+  wait().then(result => alert(result));
+}
+
+f();
 
